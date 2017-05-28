@@ -1,0 +1,18 @@
+li click='open'
+  strong #{book.title}
+  br
+  br
+  em
+    | by #{link-to book.author.name 'author' book.author.id class='author'}
+
+if isShowingModal
+  modal-dialog close="close" clickOutsideToClose=true
+    .modal
+      h3 Purchase confirmation
+      p
+        | You want to buy #{book.title} by #{book.author.name}.
+      p
+        button click="close"
+          | Purchase for #{book.price}!
+      p
+        em Thank you! We will e-mail you your e-book
