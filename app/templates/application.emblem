@@ -1,0 +1,5 @@
+h2#title
+  | #{link-to "Our Awesome Bookstore" 'books'}
+
+div class="#{getBlurring}"
+  == outlet
