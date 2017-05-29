@@ -16,7 +16,13 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+
     }
+  };
+
+  ENV['ember-simple-auth'] = {
+    routeAfterAuthentication: 'signed-in',
+    routeIfAlreadyAuthenticated: 'signed-in',
   };
 
   if (environment === 'development') {

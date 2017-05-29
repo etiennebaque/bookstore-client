@@ -7,9 +7,9 @@ export default Ember.Controller.extend({
 
   getBlurring: computed('blur', function() {
     if (this.get('blur')){
-      return 'blur-background'
+      return 'blur-background';
     }else{
-      return ''
+      return '';
     }
   }),
 
